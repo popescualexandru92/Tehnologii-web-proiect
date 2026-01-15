@@ -19,6 +19,7 @@ const verifyToken = (req, res, next) => {
             return res.status(400).json({success: false, message: 'Invalid token', data: {}})
         }
 
+        req.user = decoded;
         req.userId = decoded.id;
         req.userRole = decoded.role;
 

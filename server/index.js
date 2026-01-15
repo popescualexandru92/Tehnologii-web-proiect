@@ -7,6 +7,7 @@ dotenv.config();
 
 const authRoutes = require('./routes/auth.routes');
 const userRoutes = require('./routes/user.routes');
+const bookRoutes = require('./routes/book.routes');
 
 const PORT = process.env.PORT || 3000;
 
@@ -19,6 +20,7 @@ app.get('/', (req, res) => {
 })
 app.use('/auth', authRoutes);
 app.use('/users', userRoutes);
+app.use('/books', bookRoutes);
 
 app.listen(PORT, () => {
     console.log(`Server successfully started on port ${PORT}`)

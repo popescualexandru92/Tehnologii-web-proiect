@@ -9,7 +9,7 @@ const Book=sequelize.define('Book',{
     },
     url:{
         type: DataTypes.STRING,
-        allowNull:alse
+        allowNull:false
     },
     title:{
         type: DataTypes.STRING,
@@ -19,10 +19,7 @@ const Book=sequelize.define('Book',{
         type:DataTypes.STRING,
         allowNull:false
     },
-    price:{
-        type: DataTypes.DOUBLE,
-        allowNull:false
-    },
+
     image:{
         type:DataTypes.STRING,
         allowNull: false,

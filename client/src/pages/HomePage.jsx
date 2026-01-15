@@ -1,5 +1,5 @@
-// client/src/pages/Homepage.jsx
-import React from 'react'
+// client/src/pages/HomePage.jsx
+import { Link } from 'react-router'
 
 export default function HomePage() {
   return (
@@ -9,16 +9,15 @@ export default function HomePage() {
           Welcome to Our Reading List!
         </h1>
         <p className="text-xl text-gray-600 mb-8">
-          Add your reading list
+          Discover the best books
         </p>
-        <a
-          href="/products"
+        <Link
+          to="/books"
           className="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-lg transition duration-200"
         >
           View books
-        </a>
+        </Link>
       </div>
     </div>
   )
 }
-
