@@ -19,7 +19,6 @@ const userSlice = createSlice({
       
       if (action.payload) {
         state.user = decodeToken(action.payload);
-        console.log(decodeToken(action.payload));
         localStorage.setItem('token', action.payload);
       } else {
         state.user = null;

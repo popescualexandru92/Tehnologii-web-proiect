@@ -12,9 +12,7 @@ const MyBooksPage = () => {
     try {
       setLoading(true);
       setError(null);
-      console.log('Fetching my books...');
       const response = await getMyBooks();
-      console.log('MyBooks response:', response);
       
       if (response?.success) {
         setBooks(response.data);

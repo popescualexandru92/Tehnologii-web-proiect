@@ -22,12 +22,7 @@ const BookCard = ({ book, isLoggedIn }) => {
         userId: user?.id
       };
 
-      console.log('Sending book data:', bookData);
-      console.log('User object:', user);
-
       const response = await addBook(bookData);
-      
-      console.log('Server response:', response);
       
       if (response?.success) {
         toast.success('Book added successfully!');

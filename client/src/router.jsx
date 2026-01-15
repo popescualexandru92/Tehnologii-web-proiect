@@ -4,6 +4,7 @@ import App from "./App";
 import HomePage from "./pages/HomePage";
 import BooksPage from "./pages/BooksPage";
 import MyBooksPage from "./pages/MyBooksPage";
+import ProfilePage from "./pages/ProfilePage";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import { ProtectedLayout, AuthLayout } from "../components/ProtectedRoute";
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
           {
             path: "my-books",
             element: <MyBooksPage />,
+          },
+          {
+            path: "profile",
+            element: <ProfilePage />,
           },
         ],
       },
