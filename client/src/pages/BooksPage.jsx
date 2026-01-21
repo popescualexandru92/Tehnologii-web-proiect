@@ -19,7 +19,6 @@ const BooksPage = () => {
       if (query.trim()) {
         searchTerm = query.trim();
       } else {
-        // Search for bestseller and popular books
         const currentYear = new Date().getFullYear();
         searchTerm = `bestseller+${currentYear}`;
       }
